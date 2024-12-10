@@ -1,8 +1,6 @@
 # spring-boot-machine-test-nimap
 Java Spring Boot project for Category and Product CRUD operations with pagination.
 
-# Inventory Management System
-
 This project is an **Inventory Management System** built using **Spring Boot**. It provides basic CRUD operations for managing categories and products via REST APIs. The project is currently under **development**, and some features like category validation and integration are still in progress.
 
 ## Database Configuration
@@ -123,9 +121,8 @@ Follow these steps to set up and run the project:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/inventory-management-system.git
+git clone https://github.com/shrikantshinde178/spring-boot-machine-test-nimap.git
 ```
-
 ### 2. Set Up the MySQL Database
 Ensure that you have MySQL running on your local machine and have created a database named `inventory_management_nimap`.
 
