@@ -17,8 +17,8 @@ The project currently includes **category** and **product** APIs that support CR
 ## Current Status
 
 - The **Category** and **Product** CRUD operations are functional.
-- The **category values** are currently returning `null` in the `/api/products` response as category validation and integration are still in development.
-- **Validations** for categories are being implemented.
+- The **category values** in fetchAllproduct API is currently returning `null` in the `/api/products` response results in 5% implementation remains and is still in development.
+- **Exceptions** for categories and products are implemented.
 - The project is actively being worked on, and the source code is committed due to tight timelines.
 
 ## API Endpoints
@@ -36,7 +36,7 @@ The project currently includes **category** and **product** APIs that support CR
   {
     "categoryId": 0,
     "categoryName": "Demo Name",
-    "categoryDescription": "demo desc"
+    "categoryDescription": "Demo Desc"
   }
   ```
 
@@ -64,7 +64,7 @@ The project currently includes **category** and **product** APIs that support CR
   ```json
   {
     "categoryId": 0,
-    "productName": "demo name"
+    "productName": "Demo Name"
   }
   ```
 
@@ -104,14 +104,13 @@ The project currently includes **category** and **product** APIs that support CR
   ```
 
 ## Pagination Details
+*Displays 2 records per page for easier navigation through multiple pages. If you need more specific records on a page then simply replace the page word with the size and write the number of records you want in a single page*
 
 - **Category API Pagination**:  
-  `GET http://localhost:8080/api/categories?page=3`  
-  *Displays 2 records per page for easier navigation through multiple pages.*
+  `GET http://localhost:8080/api/categories?page=3` or `GET http://localhost:8080/api/categories?size=10` 
 
 - **Product API Pagination**:  
-  `GET http://localhost:8080/api/products?page=2`  
-  *Displays 2 records per page for easier navigation through multiple pages.*
+  `GET http://localhost:8080/api/products?page=2` or `GET http://localhost:8080/api/products?size=10`  
 
 ## How to Run the Project
 
